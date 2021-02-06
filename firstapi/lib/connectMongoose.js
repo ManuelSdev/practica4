@@ -16,7 +16,9 @@ mongoose.connection.on('error', err=>{
 //Se podría poner on en lugar de once
 mongoose.connection.once('open', ()=>{
     console.log('Conectado a MongoDB en',mongoose.connection.name)
+    //console.log('+++++++++++++++++++++++++++++++++++++++++++++++++')
 })
+
 
 mongoose.connect('mongodb://localhost/database', {
     useNewUrlParser: true,

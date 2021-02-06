@@ -22,6 +22,20 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+/**
+ * Rutas del API
+ */
+
+ //CUando llegue una petición a '/api/agentes' tiene que utilizar el router que 
+ //voy a cargar con este require
+ app.use('/api/anuncios', require('./routes/api/anuncios'))
+ app.use('/apiv1/anuncios', require('./routes/apiv1/anuncios'))
+
+/**
+ * Rutas de mi Website
+ */
+
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
