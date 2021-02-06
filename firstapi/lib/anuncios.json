@@ -14,7 +14,60 @@
             "precio": 50.00,
             "foto": "iphone.png",
             "tags": ["lifestyle", "mobile"]
+        },
+        {
+            "nombre": "cacerola",
+            "venta": false,
+            "precio": 10.00,
+            "foto": "escopeta.png",
+            "tags": ["cocina", "hogar"]
+        },
+        {
+            "nombre": "mesa",
+            "venta": false,
+            "precio": 30.00,
+            "foto": "mesa.png",
+            "tags": ["muebles", "hogar"]
+        },
+        {
+            "nombre": "coche",
+            "venta": false,
+            "precio": 45.00,
+            "foto": "escopeta.png",
+            "tags": ["motor", "lifestyle"]
+        },
+        {
+            "nombre": "cometa",
+            "venta": false,
+            "precio": 30.00,
+            "foto": "escopeta.png",
+            "tags": ["deporte", "lifestyle"]
+        },
+        {
+            "nombre": "cometa",
+            "venta": false,
+            "precio": 30.00,
+            "foto": "escopeta.png",
+            "tags": ["deporte", "lifestyle"]
+        },
+        {
+            "nombre": "cometa",
+            "venta": false,
+            "precio": 30.00,
+            "foto": "escopeta.png",
+            "tags": ["deporte", "lifestyle"]
+        },
+        {
+            "nombre": "cometa",
+            "venta": false,
+            "precio": 30.00,
+            "foto": "escopeta.png",
+            "tags": ["deporte", "lifestyle"]
         }
+
+
+
+
     ]
 }
 

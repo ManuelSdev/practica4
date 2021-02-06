@@ -7,7 +7,7 @@ const fakeData =require('./anuncios')
 const prueba = new Anuncio({
     "nombre": "paco",
     "venta": true,
-    "precio": 230.15,
+    "precio": 50,
     "foto": "bici.jpg",
     "tags": ["lifestyle", "ddddddddddddddddddddddd"]
 })

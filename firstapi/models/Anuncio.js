@@ -4,12 +4,43 @@
 const mongoose=require('mongoose')
 
 const anuncioSchema = mongoose.Schema({
-    nombre: String,
+    nombre: {type: String, index:true},
     venta: Boolean,
-    precio: Number,
+    precio: {type: Number, index:true},
     foto: String,
-    tags:[String]
+    tags:[{type: String, index:true}]
 })
+
+anuncioSchema.statics.lista = function(nombre, venta, precio, tag, limit, sort, skip){
+
+  const letrasNombre=new RegExp('^'+ nombre,'i')
+    const query = Anuncio.find({
+        //nombre: { $regex: /^paco/i } , 
+        nombre: letrasNombre,
+        venta:venta,
+        precio: rangoPrecio(precio),
+        tags: tag
+    })
+    query.limit(limit)
+    query.sort(sort)
+    query.skip(skip)
+    
+    return query.exec()
+}
+
+const rangoPrecio = function(precio){
+    if (precio === '10-50'){
+        return {'$gte': '10', '$lte': '50'}
+    }else if (precio === '10-'){
+        return {'$gte': '10'}
+    }else if (precio === '-50'){
+        return {'$lte': '50'}
+    }else if (precio === '50'){
+        return precio
+    }
+}
+
+
 
 const Anuncio = mongoose.model('Anuncio', anuncioSchema)
 
