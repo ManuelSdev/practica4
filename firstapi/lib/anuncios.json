@@ -12,61 +12,37 @@
             "nombre": "iPhone 3GS",
             "venta": false,
             "precio": 50.00,
-            "foto": "iphone.png",
+            "foto": "iphone.jpg",
             "tags": ["lifestyle", "mobile"]
         },
         {
             "nombre": "cacerola",
             "venta": false,
             "precio": 10.00,
-            "foto": "escopeta.png",
+            "foto": "cacerola.jpg",
             "tags": ["cocina", "hogar"]
         },
         {
             "nombre": "mesa",
             "venta": false,
             "precio": 30.00,
-            "foto": "mesa.png",
+            "foto": "mesa.jpg",
             "tags": ["muebles", "hogar"]
         },
         {
             "nombre": "coche",
             "venta": false,
             "precio": 45.00,
-            "foto": "escopeta.png",
+            "foto": "coche.jpg",
             "tags": ["motor", "lifestyle"]
         },
         {
             "nombre": "cometa",
             "venta": false,
             "precio": 30.00,
-            "foto": "escopeta.png",
-            "tags": ["deporte", "lifestyle"]
-        },
-        {
-            "nombre": "cometa",
-            "venta": false,
-            "precio": 30.00,
-            "foto": "escopeta.png",
-            "tags": ["deporte", "lifestyle"]
-        },
-        {
-            "nombre": "cometa",
-            "venta": false,
-            "precio": 30.00,
-            "foto": "escopeta.png",
-            "tags": ["deporte", "lifestyle"]
-        },
-        {
-            "nombre": "cometa",
-            "venta": false,
-            "precio": 30.00,
-            "foto": "escopeta.png",
+            "foto": "cometa.jpg",
             "tags": ["deporte", "lifestyle"]
         }
-
-
-
 
     ]
 }

@@ -5,7 +5,14 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= anuncios %></h1>
-    <p>Welcome to <%= title %></p>
+    
+    <h1>NODEPOP</h1>
+    <p>--------------------------</p>
+    <% anuncios.forEach(anuncio =>{ %>
+      <p><strong>Producto:</strong> <%= anuncio.nombre %> - <strong>Precio:</strong> <%= anuncio.precio %></p> 
+      <div><img src="images/<%=anuncio.foto %>" ></div>
+      <p></p>
+    <% }) %>
+
   </body>
 </html>

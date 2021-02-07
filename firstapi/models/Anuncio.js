@@ -28,6 +28,7 @@ anuncioSchema.statics.lista = function(nombre, venta, precio, tag, limit, sort, 
     return query.exec()
 }
 
+//Método que filtros para el rango del precio en funcion el precio recibido en la petición GET
 const rangoPrecio = function(precio){
     if (precio === '10-50'){
         return {'$gte': '10', '$lte': '50'}

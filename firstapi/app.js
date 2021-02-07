@@ -26,9 +26,9 @@ app.use(express.static(path.join(__dirname, 'public')));
  * Rutas del API
  */
 
- //CUando llegue una petición a '/api/agentes' tiene que utilizar el router que 
+ //CUando llegue una petición a '/api/anuncios' tiene que utilizar el router que 
  //voy a cargar con este require
- app.use('/api/anuncios', require('./routes/api/anuncios'))
+ //app.use('/api/anuncios', require('./routes/api/anuncios'))
  app.use('/apiv1/anuncios', require('./routes/apiv1/anuncios'))
 
 /**
@@ -36,8 +36,8 @@ app.use(express.static(path.join(__dirname, 'public')));
  */
 
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/', require('./routes/index'));
+app.use('/users', require('./routes/users'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
